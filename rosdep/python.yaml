@@ -118,6 +118,9 @@ python-anyjson:
   debian: [python-anyjson]
   fedora: [python-anyjson]
   ubuntu: [python-anyjson]
+python-apparmor:
+  debian: [python-apparmor]
+  ubuntu: [python-apparmor]
 python-argcomplete:
   fedora: [python-argcomplete]
   ubuntu: [python-argcomplete]
@@ -336,6 +339,13 @@ python-catkin-tools:
 python-celery:
   fedora: [python-celery]
   ubuntu: [python-celery]
+python-certifi:
+  debian:
+    stretch: [python-certifi]
+  fedora: [python-certifi]
+  ubuntu:
+    xenial: [python-certifi]
+    yakkety: [python-certifi]
 python-chainer:
   osx:
     pip:
@@ -344,17 +354,9 @@ python-chainer:
     pip:
       packages: [chainer]
 python-cherrypy:
+  debian: [python-cherrypy3]
   fedora: [python-cherrypy]
-  ubuntu:
-    precise: [python-cherrypy3]
-    quantal: [python-cherrypy3]
-    raring: [python-cherrypy3]
-    saucy: [python-cherrypy3]
-    trusty: [python-cherrypy3]
-    utopic: [python-cherrypy3]
-    vivid: [python-cherrypy3]
-    wily: [python-cherrypy3]
-    xenial: [python-cherrypy3]
+  ubuntu: [python-cherrypy3]
 python-clearsilver:
   centos: [python-clearsilver]
   debian: [python-clearsilver]
@@ -370,25 +372,37 @@ python-clearsilver:
     saucy: [python-clearsilver]
     trusty: [python-clearsilver]
 python-click:
+  debian:
+    stretch: [python-click]
   fedora: [python-click]
   osx:
     pip:
       packages: [click]
   ubuntu:
-    pip:
-      packages: [click]
+    saucy:
+      pip:
+        packages: [click]
+    trusty:
+      pip:
+        packages: [click]
+    utopic:
+      pip:
+        packages: [click]
+    vivid:
+      pip:
+        packages: [click]
+    wily:
+      pip:
+        packages: [click]
+    xenial: [python-click]
+    yakkety: [python-click]
 python-colorama:
+  debian: [python-colorama]
   fedora: [python-colorama]
   osx:
     pip:
       packages: [colorama]
-  ubuntu:
-    saucy: [python-colorama]
-    trusty: [python-colorama]
-    utopic: [python-colorama]
-    vivid: [python-colorama]
-    wily: [python-colorama]
-    xenial: [python-colorama]
+  ubuntu: [python-colorama]
 python-concurrent.futures:
   fedora: [python-futures]
   ubuntu: [python-concurrent.futures]
@@ -472,6 +486,9 @@ python-crypto:
     wily_python3: [python3-crypto]
     xenial: [python-crypto]
     xenial_python3: [python3-crypto]
+python-cryptography:
+  debian: [python-cryptography]
+  ubuntu: [python-cryptography]
 python-cwiid:
   arch: [cwiid]
   debian: [python-cwiid]
@@ -494,6 +511,11 @@ python-dateutil:
     raring: [python-dateutil]
     saucy: [python-dateutil]
     trusty: [python-dateutil]
+    utopic: [python-dateutil]
+    vivid: [python-dateutil]
+    wily: [python-dateutil]
+    xenial: [python-dateutil]
+    yakkety: [python-dateutil]
 python-deap-pip:
   debian:
     pip: [deap]
@@ -548,6 +570,10 @@ python-docx:
   fedora: [python-docx]
   ubuntu:
     pip: [python-docx]
+python-easygui:
+  debian: [python-easygui]
+  fedora: [python-easygui]
+  ubuntu: [python-easygui]
 python-empy:
   arch: [python2-empy]
   debian: [python-empy]
@@ -631,6 +657,10 @@ python-flask:
     saucy: [python-flask]
     trusty: [python-flask]
     trusty_python3: [python3-flask]
+    utopic: [python-flask]
+    vivid: [python-flask]
+    wily: [python-flask]
+    xenial: [python-flask]
 python-flask-cors-pip:
   debian:
     pip:
@@ -676,6 +706,7 @@ python-gevent:
   ubuntu: [python-gevent]
 python-gi:
   debian: [python-gi]
+  fedora: [pygobject3]
   ubuntu: [python-gi]
 python-googleapi:
   debian: [python-googleapi]
@@ -749,6 +780,8 @@ python-h5py:
     trusty: [python-h5py]
     trusty_python3: [python3-h5py]
     vivid: [python-h5py]
+    wily: [python-h5py]
+    xenial: [python-h5py]
 python-httplib2:
   debian: [python-httplib2]
   fedora: [python-httplib2]
@@ -876,6 +909,13 @@ python-libpgm-pip:
   ubuntu:
     pip:
       packages: [libpgm]
+python-lttngust:
+  debian:
+    pip:
+      packages: [python-lttngust]
+  ubuntu:
+    pip:
+      packages: [python-lttngust]
 python-lxml:
   debian: [python-lxml]
   fedora: [python-lxml]
@@ -888,6 +928,7 @@ python-mako:
   fedora: [python-mako]
   ubuntu: [python-mako]
 python-mapnik:
+  debian: [python-mapnik]
   fedora: [mapnik-python]
   ubuntu: [python-mapnik]
 python-marshmallow:
@@ -1044,6 +1085,7 @@ python-networkmanager:
   ubuntu: [python-networkmanager]
 python-networkx:
   arch: [python2-networkx]
+  debian: [python-networkx]
   fedora: [python-networkx]
   ubuntu:
     lucid: [python-networkx]
@@ -1056,6 +1098,10 @@ python-networkx:
     saucy: [python-networkx]
     trusty: [python-networkx]
     trusty_python3: [python3-networkx]
+    wily: [python-networkx]
+    wily_python3: [python3-networkx]
+    xenial: [python-networkx]
+    xenial_python3: [python3-networkx]
 python-nose:
   arch: [python2-nose]
   debian: [python-nose]
@@ -1166,6 +1212,9 @@ python-opengl:
     vivid: [python-opengl]
     wily: [python-opengl]
     xenial: [python-opengl]
+python-openssl:
+  debian: [python-openssl]
+  ubuntu: [python-openssl]
 python-pandas:
   arch: [python2-pandas]
   debian: [python-pandas]
@@ -1292,6 +1341,8 @@ python-progressbar:
     trusty_python3: [python3-progressbar]
     utopic: [python-progressbar]
     vivid: [python-progressbar]
+    wily: [python-progressbar]
+    xenial: [python-progressbar]
 python-psutil:
   arch: [python2-psutil]
   debian: [python-psutil]
@@ -1474,6 +1525,8 @@ python-pymodbus:
     raring: [python-pymodbus]
     saucy: [python-pymodbus]
     trusty: [python-pymodbus]
+    wily: [python-pymodbus]
+    xenial: [python-pymodbus]
 python-pymongo:
   debian: [python-pymongo]
   fedora: [python-pymongo]
@@ -1713,6 +1766,10 @@ python-rdflib:
     raring: [python-rdflib]
     saucy: [python-rdflib]
     trusty: [python-rdflib]
+python-readchar-pip:
+  ubuntu:
+    pip:
+      packages: [readchar]
 python-redis:
   debian: [python-redis]
   fedora: [python-redis]
@@ -2023,11 +2080,13 @@ python-sip4:
 python-six:
   fedora: [python-six]
   ubuntu:
+    saucy: [python-six]
     trusty: [python-six]
+    utopic: [python-six]
     vivid: [python-six]
     wily: [python-six]
     xenial: [python-six]
-    xenial: [python-six]
+    yakkety: [python-six]
 python-skimage:
   debian: [python-skimage]
   fedora: [python-scikit-image]
@@ -2175,6 +2234,16 @@ python-sympy:
     wily_python3: [python3-sympy]
     xenial: [python-sympy]
     xenial_python3: [python3-sympy]
+python-tabulate:
+  debian:
+    sid: [python-tabulate]
+    stretch: [python-tabulate]
+  fedora:
+    '23': [python-tabulate]
+    '24': [python-tabulate]
+  ubuntu:
+    wily: [python-tabulate]
+    xenial: [python-tabulate]
 python-telegram-bot:
   ubuntu:
     pip:
@@ -2214,6 +2283,7 @@ python-tftpy:
   fedora: [python-tftpy]
   ubuntu: [python-tftpy]
 python-tilestache:
+  debian: [tilestache]
   fedora:
     '21': [python-tilestache]
     '22': [python-tilestache]
@@ -2341,6 +2411,10 @@ python-twitter:
     raring: [python-twitter]
     saucy: [python-twitter]
     trusty: [python-twitter]
+python-tz:
+  debian: [python-tz]
+  fedora: [pytz]
+  ubuntu: [python-tz]
 python-tzlocal-pip:
   ubuntu:
     pip:
@@ -2504,7 +2578,19 @@ python-zmq:
     saucy: [python-zmq]
     trusty: [python-zmq]
     trusty_python3: [python3-zmq]
+    utopic: [python-zmq]
     vivid: [python-zmq]
+    wily: [python-zmq]
+    xenial: [python-zmq]
+    yakkety: [python-zmq]
+python3-babeltrace:
+  debian:
+    jessie: [python3-babeltrace]
+    sid: [python3-babeltrace]
+    stretch: [python3-babeltrace]
+  ubuntu:
+    wily: [python3-babeltrace]
+    xenial: [python3-babeltrace]
 xdot:
   debian: [xdot]
   fedora: [python-xdot]
